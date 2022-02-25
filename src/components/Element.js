@@ -1,4 +1,11 @@
+import {useState} from 'react';
+
 function Element() {
+
+  const [inputVal, setInputVal] = useState(0);
+
+  const [getState, setGetState] = useState('click to refresh');
+
   return (
     <div className="md:flex items-center justify-center min-h-screen ">
       <div className="z-10 grid justify-items-center rounded-md bg-blue-400">
@@ -11,17 +18,34 @@ function Element() {
               className="shadow border rounded py-2 px-3 form-input mt-1 block w-full ring-yellow-500 outline-none focus:ring"
               type="number"
               placeholder="0"
+              id="state"
+              value={inputVal}
+              name="stateInput"
+              onChange={null}
             />
           </label>
           <div className="flex items-center justify-center">
-            <button className="text-white p-1 border-2 w-1/3 m-5 hover:bg-indigo-500 hover:text-gray-300">
+            <button
+              className="text-white p-1 border-2 w-1/3 m-5 hover:bg-indigo-500 hover:text-gray-300"
+              onClick={null}
+              type="button"
+            >
               Get the state
             </button>
-            <button className="text-white p-1 border-2 w-1/3 m-5 hover:bg-blue-500 hover:text-gray-300">
+            <button
+              className="text-white p-1 border-2 w-1/3 m-5 hover:bg-blue-500 hover:text-gray-300"
+              onClick={null}
+              type="button"
+            >
               Update the state
             </button>
           </div>
         </form>
+      </div>
+
+      <br />
+      <div className="">
+        <h2>The state is: {getState}</h2>
       </div>
     </div>
   );
