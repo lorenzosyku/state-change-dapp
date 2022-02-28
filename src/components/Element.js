@@ -1,29 +1,30 @@
+import React from 'react'
 import { useState } from "react";
 import Web3 from "web3";
 import { changeStateInput } from "../abi/abis";
 
-const web3 = new Web3(web3.givenProvider);
+//const web3 = new Web3(web3.givenProvider);
 const contractAddr = "0xac712CA6b82e2eE44df82e4730D4f53Aeff874f1";
-const changeState = new web3.eth.Contract(changeStateInput, contractAddr);
+//const changeState = new web3.eth.Contract(changeStateInput, contractAddr);
 
 function Element() {
   const [inputVal, setInputVal] = useState(0);
   const [getState, setGetState] = useState("click to refresh");
 
-  const web3Check = new Web3();
+  /*const web3Check = new Web3();
   web3Check.setProvider(
     new Web3.providers.WebsocketProvider("ws://localhost:9545")
   );
   web3Check.eth.net
     .isListening()
     .then(() => console.log("connection successful"))
-    .catch((e) => console.log("no connection" + e));
+    .catch((e) => console.log("no connection" + e));*/
 
   //read data from blockchain
   const handleGet = async (e) => {
     e.preventDefault();
-    const result = await changeState.methods.get().call();
-    setGetState(result);
+    //const result = await changeState.methods.get().call();
+    //setGetState(result);
   };
 
   //write data to the blockchain
@@ -32,11 +33,11 @@ function Element() {
     e.preventDefault();
     const accounts = await window.ethereum.enable();
     const account = accounts[0];
-    const gas = await changeState.methods.set(inputVal).estimatedGas();
-    const result = await changeState.methods.set(inputVal).send({
-      from: account,
-      gas,
-    });
+    //const gas = await changeState.methods.set(inputVal).estimatedGas();
+    //const result = await changeState.methods.set(inputVal).send({
+    //  from: account,
+    //  gas,
+    //});
   };
 
   return (
