@@ -22,7 +22,7 @@ contract Migrations {
   }
 
   function upgrade(address new_address) public restricted {
-    Migrations upgradeted = Migrations(new_address);
-    upgradeted.setCompleted(last_completed_migration);
+    Migrations upgraded = Migrations(new_address);
+    upgraded.setCompleted(last_completed_migration);
   }
 }
