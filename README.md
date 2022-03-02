@@ -1,70 +1,26 @@
-# Getting Started with Create React App
+# Intro to the Dapp
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This Dapp was build as a Web3 demo project on ETH-testnet, during the coaching call hosted by Brian H. Hough. In this Dapp any user is able to connect with its MetaMask Wallet through web3 library and can read/write data from/to the blockchain. The smart contract was programmed in Solidity and compiled through Truffle.
 
-## Available Scripts
+# Functionality
 
-In the project directory, you can run:
+First connect your MetaMask wallet, then if you want to get the state click the button 'Get the state' and you'll see what's the number that a previuos user put. If you want to change that number in the input field you can put your own number and then click on 'Update the state', your MetaMask wallet will pop up indicating that you need to confirm this transaction, after you confirm and pay the gas fee, the state will successfully changed.
 
-### `npm start`
+# General Info about the contract 'ChangeStateInput'
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Deploying 'ChangeStateInput'
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+> transaction hash: 0xcd7d102aa6ad689ba945c7d48f91864e5fbd9cccb82d3c40664fea9e0b59bf47
+> Blocks: 0 Seconds: 0
+> contract address: 0xdB00CD36BB23D263fDf6d1F1E87b1F15165EcCf8
+> block number: 3
+> block timestamp: 1646168187
+> account: 0xB52CED97A894A2C148F2A78a25B01874408868C9
+> balance: 99.998501681945991479
+> gas used: 101241 (0x18b79)
+> gas price: 3.179902189 gwei
+> value sent: 0 ETH
+> total cost: 0.000321936477516549 ETH
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Saving migration to chain.
+> Saving artifacts
