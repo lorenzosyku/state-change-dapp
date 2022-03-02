@@ -10,17 +10,16 @@ First connect your MetaMask wallet, then if you want to get the state click the 
 
 Deploying 'ChangeStateInput'
 
-> transaction hash: 0xcd7d102aa6ad689ba945c7d48f91864e5fbd9cccb82d3c40664fea9e0b59bf47
-> Blocks: 0 Seconds: 0
-> contract address: 0xdB00CD36BB23D263fDf6d1F1E87b1F15165EcCf8
-> block number: 3
-> block timestamp: 1646168187
-> account: 0xB52CED97A894A2C148F2A78a25B01874408868C9
-> balance: 99.998501681945991479
-> gas used: 101241 (0x18b79)
-> gas price: 3.179902189 gwei
-> value sent: 0 ETH
-> total cost: 0.000321936477516549 ETH
+transaction hash: 0xcd7d102aa6ad689ba945c7d48f91864e5fbd9cccb82d3c40664fea9e0b59bf47
 
-> Saving migration to chain.
-> Saving artifacts
+Blocks: 0 Seconds: 0
+contract address: 0xdB00CD36BB23D263fDf6d1F1E87b1F15165EcCf8
+block number: 3
+block timestamp: 1646168187
+account: 0xB52CED97A894A2C148F2A78a25B01874408868C9
+balance: 99.998501681945991479
+gas used: 101241 (0x18b79)
+gas price: 3.179902189 gwei
+value sent: 0 ETH
+total cost: 0.000321936477516549 ETH
+
